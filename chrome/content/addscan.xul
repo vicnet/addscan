@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<overlay id="sample" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/javascript" src="chrome://addscan/content/overlay.js"/>
+  <menupopup id="button-attachPopup">
+    <menuitem id="addscan"
+              label="Scan..."
+			  command="cmd_addscan"
+			  />
+  </menupopup>
+  
+  id="composeCommands"
+  <commandset id="composeCommands">
+	  <command id="cmd_addscan" oncommand="AddScan()"/></commandset>
+</overlay>
+
